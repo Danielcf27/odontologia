@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="row rhome">
+  <div class="col centrado"><a href=""><img src="{% static "img/clientes.png" %}" class="imgdiv"></a></div>
+  <div class="col centrado"><a href=""><img src="{% static "img/expediente.png" %}" class="imgdiv"></div>
+  <div class="col centrado"><a href=""><img src="{% static "img/citas.png" %}" class="imgdiv"></div>
+</div>
+
+<div class="row rhome">
+  <div class="col centrado2"><a href=""><img src="{% static "img/productos.png" %}" class="imgdiv"></a></div>
+  <div class="col centrado2"><a href=""><img src="{% static "img/ventas.png" %}" class="imgdiv"></div>
+  <div class="col centrado2"><a href=""><img src="{% static "img/facturacion.png" %}" class="imgdiv"></div>
+</div>
+
+{% endblock %}
