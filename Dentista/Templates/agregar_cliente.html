@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href='{% static "css/clientes.css" %}'>
+<h1 style="text-align: center; margin-top: 20px; margin-bottom: -70px; font-family: 'Montserrat', sans-serif;">Agregar Cliente</h1>
+<div class="container" style="font-family: 'Montserrat', sans-serif;">
+    <div class="row">
+        <div class="col">
+         
+        </div>
+    <div class="col-6">
+    <form class="row g-3">
+        
+        <div class="col-md-12" style="margin-top: 20px;">
+          <label for="validationCustom01" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="validationCustom01" value="" >
+        </div>
+        <div class="col-md-12" style="margin-top: 20px;">
+          <label for="validationCustom02" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="validationCustom02" value="" >
+        </div>
+        <div class="col-md-12" style="margin-top: 20px;">
+          <label for="validationCustomUsername" class="form-label">Telefono</label>
+            <input type="text" class="form-control" id="validationCustomUsername">
+          </div>
+
+          <div class="col-md-12" style="margin-top: 20px;">
+            <label for="validationCustom01" class="form-label">Dirección</label>
+            <input type="text" class="form-control" id="validationCustom01" value="">
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+        <div class="col-12" style="margin-top: 20px;">
+          <button class="btn btn-success" type="submit">Guardar</button>
+        </div>
+        
+      </form>
+    </div>
+    <div class="col">
+        
+      </div>
+</div>
+<script>
+    (function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+</script>
+{% endblock %}

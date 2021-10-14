@@ -16,10 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from Dentista.views import home, log
+from Dentista.views import agregarCliente, clientes, home, log
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('login/', log),
+    path('', log),
     path('home/', home),
+    path('clientes/', clientes, name= "clientes"),
+    path('agregarCliente/', agregarCliente, name= "agregarCliente"),
 ]

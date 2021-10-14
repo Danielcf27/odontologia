@@ -16,12 +16,6 @@ form {
   
 }
 
-nav{
-  background-color: #13d623 !important;
-  color: white;
-
-}
-
 .centrado{
 
   transform: translate(10%, 25%);
@@ -42,4 +36,10 @@ nav{
 .centrado2{
 
 transform: translate(10%, 40%);
+}
+
+.clientes{
+
+  margin-top: 20px;
+  text-align: right;
 }
