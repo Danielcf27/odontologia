@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static%}
+{% block content %}
+
+<h1 style="text-align: center; margin-top: 20px; font-family: 'Montserrat', sans-serif;">Productos</h1>
+<br>
+<form action='{% url "agregarProducto" %}' class="form-horizontal" enctype="multipart/form-data">
+	<div>
+			<button class="btn" type="submit" style="background: #607d8b; color: white"> Agregar Producto </button>
+		</div>
+
+<div class="row col-sm-12">
+		<table style="margin-top: 20px;" id="dvData" class="table table-striped" >
+			<thead>
+				<tr>
+					<th >
+						<strong>Nombre</strong>
+					</th>
+					<th >
+						<strong>Tipo</strong>
+					</th>
+					<th >
+						<strong>Marca</strong>
+					</th>
+					<th >
+						<strong>Especificaciones</strong>
+					</th>
+					<th >
+						<strong>Precio</strong>
+					</th>
+                    <th>
+                        <strong>Eliminar</strong>
+                    </th>
+				</tr>
+			</thead>
+		</table>
+	</div>		
+</form>
+
+{% endblock %}

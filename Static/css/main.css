@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: url(../img/light-grey-terrazzo.png);
+  /*background: url(../img/light-grey-terrazzo.png);*/
   background-size: fixed;
   font-family: 'Montserrat', sans-serif;
   height: 100vh;
@@ -42,7 +42,7 @@ body {
   padding: 0;
   font-weight: bold;
   display: block;
-  color: #13d623
+  color: #607d8b; 
 }
 
 .login-box input {
@@ -64,15 +64,14 @@ body {
   border: none;
   outline: none;
   height: 40px;
-  background: #28a745;
+  background: #607d8b !important;
   color: #fff;
   font-size: 18px;
   border-radius: 20px;
 }
-s
 .login-box input[type="submit"]:hover {
   cursor: pointer;
-  background: #28a745;
+  background: #607d8b;
   color: #ffffff;
 }
 
@@ -84,12 +83,12 @@ s
 }
 
 .login-box a:hover {
-  color: #2979ff;
+  color: #607d8b;
 }
 
 nav{
 
-	color: #13d623; 
+	color: #00a3f5; 
 }
 
 .adminbtn{
@@ -97,7 +96,7 @@ nav{
 	border: none;
   outline: none;
   height: 45px;
-  background: #13d623;
+  background: #607d8b;
   color: #fff;
   font-size: 18px;
   border-radius: 20px;

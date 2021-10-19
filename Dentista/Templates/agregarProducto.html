@@ -1,8 +1,8 @@
-{% extends "base.html" %}
+{% extends "base.html "%}
 {% load static %}
 {% block content %}
 <link rel="stylesheet" href='{% static "css/clientes.css" %}'>
-<h1 style="text-align: center; margin-top: 20px; margin-bottom: -70px; font-family: 'Montserrat', sans-serif;">Agregar Cliente</h1>
+<h1 style="text-align: center; margin-top: 20px; margin-bottom: -70px; font-family: 'Montserrat', sans-serif;">Agregar Producto</h1>
 <div class="container" style="font-family: 'Montserrat', sans-serif;">
     <div class="row">
         <div class="col">
@@ -12,27 +12,28 @@
     <form class="row g-3">
         
         <div class="col-md-12" style="margin-top: 20px;">
-          <label class="form-label">Nombre</label>
-          <input class="form-control" id="txtNom">
+          <label for="validationCustom01" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="validationCustom01" value="" >
         </div>
         <div class="col-md-12" style="margin-top: 20px;">
-          <label for="validationCustom02" class="form-label">Apellido</label>
+          <label for="validationCustom02" class="form-label">Tipo</label>
           <input type="text" class="form-control" id="validationCustom02" value="" >
         </div>
         <div class="col-md-12" style="margin-top: 20px;">
-          <label for="validationCustomUsername" class="form-label">Telefono</label>
+          <label for="validationCustomUsername" class="form-label">Marca</label>
             <input type="text" class="form-control" id="validationCustomUsername">
           </div>
 
           <div class="col-md-12" style="margin-top: 20px;">
-            <label for="validationCustom01" class="form-label">Dirección</label>
+            <label for="validationCustom01" class="form-label">Especificaciones</label>
             <input type="text" class="form-control" id="validationCustom01" value="">
-            <div class="valid-feedback">
-              Looks good!
-            </div>
+          </div>
+          <div class="col-md-12" style="margin-top: 20px;">
+            <label for="validationCustom01" class="form-label">Precio</label>
+            <input type="text" class="form-control" id="validationCustom01" value="">
           </div>
         <div class="col-12" style="margin-top: 20px;">
-          <button class="btn" type="submit" style="background: #607d8b; color: #fff">Guardar</button>
+          <button class="btn" type="submit" style="background: #607d8b;">Guardar</button>
         </div>
         
       </form>

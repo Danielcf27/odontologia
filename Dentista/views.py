@@ -8,5 +8,12 @@ def home(request):
 
 def clientes(request):
     return render(request, "clientes.html")
+
 def agregarCliente(request):
-    return render (request, "agregar_cliente.html")   
+    return render (request, "agregar_cliente.html")  
+
+def productos(request):
+    return render(request, "productos.html")
+
+def agregaProducto(request):
+    return render(request, "agregarProducto.html")
