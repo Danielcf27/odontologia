@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static%}
+{% block content %}
+
+<h1 style="text-align: center; margin-top: 20px; font-family: 'Montserrat', sans-serif;">Clientes</h1>
+<br>
+<form action='{% url "agregarCliente" %}' class="form-horizontal" enctype="multipart/form-data">
+	<div>
+			<button class="btn" type="submit" style="background-color: #607d8b; color: #fff;"> Agregar Cliente </button>
+		</div>
+
+<div class="row col-sm-12">
+		<table style="margin-top: 20px;" id="dvData" class="table table-striped" >
+			<thead>
+				<tr>
+					<th >
+						<strong>Nombre</strong>
+					</th>
+					<th >
+						<strong>Telefono Movil</strong>
+					</th>
+					<th >
+						<strong>Telefono Casa</strong>
+					</th>
+					<th >
+						<strong>Correo Electronico</strong>
+					</th>
+					<th >
+						<strong>Eliminar</strong>
+					</th>
+				</tr>
+			</thead>
+		</table>
+	</div>		
+</form>
+
+{% endblock %}
