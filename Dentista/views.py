@@ -17,3 +17,7 @@ def productos(request):
 
 def agregaProducto(request):
     return render(request, "agregarProducto.html")
+
+def ventas(request):
+    return render(request, "ventas.html")
+

@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from Dentista.views import agregaProducto, agregarCliente, clientes, home, log, productos
+from Dentista.views import agregaProducto, agregarCliente, clientes, home, log, productos, ventas
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,5 +25,6 @@ urlpatterns = [
     path('clientes/', clientes, name= "clientes"),
     path('agregarCliente/', agregarCliente, name= "agregarCliente"),
     path('productos/', productos, name="productos" ),
-    path('AgregarProducto/', agregaProducto, name="agregarProducto")
+    path('agregarProducto/', agregaProducto, name="agregarProducto"),
+    path('ventas/', ventas, name="ventas"),
 ]
